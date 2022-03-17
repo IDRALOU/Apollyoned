@@ -25,7 +25,7 @@ class Kyrie():
         t = [chr(ord(t)-key) if t != "ζ" else "\n" for t in text]
         return "".join(t)
 
-file_name = input("Fichier: ")
+file_name = input("Fichier à deob: ")
 
 with open(file_name) as file:
     code = "mdr=" + file.read()[4:]
